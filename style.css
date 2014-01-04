@@ -1,0 +1,51 @@
+/*
+Theme Name: BootMania
+Theme URI: http://www.imparabootstrap.it
+Author: Salvatore Laisa
+Author URI: http://www.salvatorelaisa.net
+Description: Un tema framework in italiano basato su Bootstrap 3
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: bootmania
+
+http://snook.ca/archives/html_and_css/font-size-with-rem
+http://blog.typekit.com/2011/11/09/type-study-sizing-the-legible-letter/
+*/
+
+/* =Layout
+-------------------------------------------------------------- */
+.corpo article:last-child hr{
+	display: none;
+}
+footer{
+	margin-bottom: 60px;
+}
+
+/* =Widget
+-------------------------------------------------------------- */
+div.widget{
+	margin: 25px 0;
+}
+#wp-calendar{
+	width: 100%;
+	text-align: center;
+	border: 1px solid #eee;
+}
+#wp-calendar th{
+	text-align: center;
+}
+#wp-calendar caption{
+	padding: 5px 0;
+	background-color: #eee;
+	font-size: 15px;
+}
+#wp-calendar tfoot{
+	border-top: 1px solid #eee;
+}
+
+/* =Maschera di ricerca
+-------------------------------------------------------------- */
+.search-form input.form-control{
+	width: 50%;
+}
