@@ -43,11 +43,26 @@ function regNavPrincipale(){
 	register_nav_menu('principale','Navigazione principale');
 }
 
+// Modifico logo login
+function loginLogo_BM(){ ?>
+	<style type="text/css">
+        body.login div#login h1 a {
+            background-image: url(<?php echo get_stylesheet_directory_uri(); ?>/img/login.svg);
+            width: 320px;
+            height: 80px;
+            background-size: 320px 80px;
+        }
+    </style>
+<?php }
+
+
+
 // Azioni
 add_action('wp_enqueue_scripts','caricaBScss_BM');
 add_action('wp_enqueue_scripts','caricaBSjs_BM');
 add_action('wp_enqueue_scripts','caricajQuery_BM');
 add_action('widgets_init','widgetBarraLaterale');
 add_action('init','regNavPrincipale');
+add_action( 'login_enqueue_scripts', 'loginLogo_BM' );
 
 ?>
