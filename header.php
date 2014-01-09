@@ -5,13 +5,13 @@
 		<meta charset="<?php bloginfo( 'charset' ); ?>" >
 		
 		<!-- Titolo e descrizione -->
-		<title><?php wp_title(); ?></title>
+		<title><?php bloginfo('name'); ?></title>
 		<meta name="description" content="<?php bloginfo( 'description' ); ?>">
 		
 		<!-- Metadati e collegamenti vari -->
 		<link rel="profile" href="http://gmpg.org/xfn/11" >
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="icon" href="<?php bloginfo('template_url'); ?>/favicon.png" type="image/png">
+		<link rel="icon" href="<?php bloginfo('template_url'); ?>/img/favicon.png" type="image/png">
 
 		<!-- Foglio di stile principale -->
 		<link rel="stylesheet" href="<?php echo get_stylesheet_uri(); ?>" type="text/css" media="screen" >
